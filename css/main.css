@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Elina";
+  src: url("../font/Elina.otf"); }
+body.general {
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 100px; }
+  body.general .swiper-button-prev, body.general .swiper-button-next {
+    color: #131520; }
+  body.general .btnStyle {
+    font-size: 18px;
+    width: unset;
+    height: unset;
+    padding: 0.5em 1em; }
+  body.general .btnStyle2 {
+    transition: 0.3s; }
+    body.general .btnStyle2:hover {
+      background-color: #feba62; }
+
+.backFonBlock {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url("../img/200523-15-11-12.png");
+  height: 38.38vw;
+  min-height: 10vh;
+  padding-bottom: 0; }
+  .backFonBlock .bottomShadow {
+    background: linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF 90%); }
+
+.linePreviewText {
+  height: 100%;
+  width: 100%; }
+  .linePreviewText .container {
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 12px;
+    color: #000;
+    padding: 50px 100px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.5em; }
+    .linePreviewText .container h6 {
+      font-family: "Elina";
+      text-transform: none;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 300;
+      line-height: 3em; }
+
+#aboutBlock > h2, #courses > h2, #reviews > h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 1.75em; }
+
+#aboutBlock ul {
+  font-size: 20px; }
+  #aboutBlock ul li {
+    position: relative; }
+    #aboutBlock ul li .num {
+      min-width: 100px;
+      max-width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      border: 2px dashed #131520;
+      margin-right: 1em;
+      font-family: "Montserrat";
+      font-weight: 300;
+      font-size: 60px; }
+    @media screen and (min-width: 768px) {
+      #aboutBlock ul li:not(:last-child):after {
+        position: absolute;
+        content: "";
+        border: 2px dashed #131520;
+        height: calc(100% - 100px);
+        bottom: 0;
+        left: 49px; } }
+
+#courses .courses-item {
+  box-shadow: 0px 3px 6px #00000029; }
+  #courses .courses-item .desc .head, #courses .courses-item .desc .price {
+    line-height: 1.5em;
+    font-size: 2em;
+    font-weight: 500; }
+  #courses .courses-item .desc .price {
+    color: #f88d02;
+    white-space: nowrap; }
+  #courses .courses-item .desc #duration {
+    white-space: nowrap; }
+  #courses .courses-item .desc #duration, #courses .courses-item .desc #curators, #courses .courses-item .desc #outcome {
+    position: relative;
+    padding-left: 35px;
+    padding-right: 20px; }
+    #courses .courses-item .desc #duration:before, #courses .courses-item .desc #curators:before, #courses .courses-item .desc #outcome:before {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      left: 0; }
+  #courses .courses-item .desc #duration:before {
+    background-image: url("../img/icons/clock.svg"); }
+  #courses .courses-item .desc #curators:before {
+    background-image: url("../img/icons/hands.svg"); }
+  #courses .courses-item .desc #outcome:before {
+    background-image: url("../img/icons/medal.svg"); }
+
+#reviews {
+  margin-top: 4em; }
+  #reviews .swiper-container .swiper-wrapper .swiper-slide {
+    padding: 6px; }
+    #reviews .swiper-container .swiper-wrapper .swiper-slide .item {
+      box-shadow: 0px 1px 6px #00000029;
+      border-radius: 12px; }
+      #reviews .swiper-container .swiper-wrapper .swiper-slide .item h1 {
+        text-transform: unset;
+        font-weight: 300;
+        font-size: 38px;
+        line-height: 1.5em; }
+      #reviews .swiper-container .swiper-wrapper .swiper-slide .item p {
+        font-size: 16px; }
+
+/*# sourceMappingURL=main.css.map */

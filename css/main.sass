@@ -1,0 +1,155 @@
+@font-face
+	font-family: 'Elina'
+	src: url('../font/Elina.otf')
+
+body.general
+	background-color: #fff
+	color: #000
+	padding-bottom: 100px
+
+	.swiper-button-prev, .swiper-button-next
+		color: #131520
+
+	.btnStyle
+		font-size: 18px
+		width: unset
+		height: unset
+		padding: .5em 1em
+
+	.btnStyle2
+		transition: .3s
+
+		&:hover
+			background-color: lighten(#F88D02, 20%)
+
+.backFonBlock
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: top
+	background-image: url('../img/200523-15-11-12.png')
+	height: 38.38vw
+	min-height: 10vh
+	padding-bottom: 0
+
+	.bottomShadow
+		background: linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF 90%)
+
+.linePreviewText
+	height: 100%
+	width: 100%
+
+	.container
+		background: rgba(255, 255, 255, 0.78)
+		border-radius: 12px
+		color: #000
+		padding: 50px 100px
+		font-size: 40px
+		text-align: center
+		line-height: 1.5em
+
+		h6
+			font-family: 'Elina'
+			text-transform: none
+			font-size: 20px
+			text-align: center
+			font-weight: 300
+			line-height: 3em
+
+#aboutBlock, #courses, #reviews
+	&> h2
+		font-size: 40px
+		font-weight: 500
+		margin-bottom: 1.75em
+
+#aboutBlock
+	ul
+		font-size: 20px
+
+		li
+			position: relative
+
+			.num
+				min-width: 100px
+				max-width: 100px
+				height: 100px
+				display: flex
+				justify-content: center
+				align-items: center
+				border-radius: 100px
+				border: 2px dashed #131520
+				margin-right: 1em
+				font-family: 'Montserrat'
+				font-weight: 300
+				font-size: 60px
+
+			&:not(:last-child)
+				@media screen and (min-width: 768px)
+					&:after
+						position: absolute
+						content: ''
+						border: 2px dashed #131520
+						height: calc(100% - 100px)
+						bottom: 0
+						left: 49px
+
+#courses
+	.courses-item
+		box-shadow: 0px 3px 6px #00000029
+
+		.desc
+			.head, .price
+				line-height: 1.5em
+				font-size: 2em
+				font-weight: 500
+
+			.price
+				color: #f88d02
+				white-space: nowrap
+
+			#duration
+				white-space: nowrap
+
+			#duration, #curators, #outcome
+				position: relative
+				padding-left: 35px
+				padding-right: 20px
+
+				&:before
+					position: absolute
+					content: ''
+					width: 24px
+					height: 24px
+					background-repeat: no-repeat
+					background-size: contain
+					background-position: center
+					left: 0
+
+			#duration:before
+				background-image: url('../img/icons/clock.svg')
+
+			#curators:before
+				background-image: url('../img/icons/hands.svg')
+
+			#outcome:before
+				background-image: url('../img/icons/medal.svg')
+
+#reviews
+	margin-top: 4em
+
+	.swiper-container
+		.swiper-wrapper
+			.swiper-slide
+				padding: 6px
+
+				.item
+					box-shadow: 0px 1px 6px #00000029
+					border-radius: 12px
+
+					h1
+						text-transform: unset
+						font-weight: 300
+						font-size: 38px
+						line-height: 1.5em
+
+					p
+						font-size: 16px
